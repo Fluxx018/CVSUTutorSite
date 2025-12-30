@@ -56,7 +56,7 @@ ul li{
                 width: clamp(3.3rem, 4.5vw, 9rem);
                 cursor: pointer;
                 
-                background-image: url("../CVSUTutorSite/images/cvsu.png");
+                background-image: url("../images/cvsu.png");
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-color: transparent;
@@ -159,7 +159,7 @@ ul li{
     box-sizing: border-box;
     padding: 5rem;
     padding-top: 10rem;
-    background-image: url('../CVSUTutorSite/images/wave.svg');
+    background-image: url('images/wave.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -289,7 +289,7 @@ ul li{
     flex-direction: column;
     position: relative;
     color: white;
-    background-image: url('../CVSUTutorSite/images/stacked1.svg');
+    background-image: url('/images/stacked1.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -874,4 +874,5 @@ ul li{
             }
         }
     }
+
 }
