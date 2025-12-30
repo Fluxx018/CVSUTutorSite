@@ -1,0 +1,848 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 16px;
+}
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+ul li{
+    list-style: none;
+}
+.navbar{
+    height: clamp(2.2rem, 4.813vw, 16.5rem);
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(185, 248, 207,0.8);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 0.3rem #B9F8CF solid;
+
+    .navUl{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: clamp(2rem, 12vw, 15rem);
+        box-sizing: border-box;
+        padding-right: clamp(1.2rem, 2.625vw, 9rem);
+
+        .click{
+            width: clamp(2rem, 4.375vw, 15.0rem);
+            height: 100%;
+            margin-left: clamp(4rem, 10vh, 40rem);
+
+            .logo{
+                height: clamp(3rem, 3.5vw, 9rem);
+                width: clamp(3.3rem, 4.5vw, 9rem);
+                cursor: pointer;
+                background-image: url("../CVSUTutorSite/images/cvsu.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: transparent;
+            }
+        }
+        .navCont{
+            width: 40%;
+            height: clamp(1rem, 7vh, 10rem);
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+
+            li{
+                height: 80%;
+                width: 20%; 
+                padding: clamp(0.80rem, 0.88vw, 1.40rem);
+                box-sizing: border-box;
+                border: 0.1rem solid transparent;
+                border-radius: 1rem;
+                
+                &:hover{
+                    background-color: rgba(208, 240, 192, 0.7);
+                }
+                
+                a{  
+                    color: black;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    font-size: clamp(0.52rem, 1.14vw, 3.9rem);
+                    font-weight: 700;
+                }
+            }
+            
+        }
+        .btnCont{
+            width: 20%; 
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            button{
+                width: fit-content;
+                height: 70%;
+                padding: 0 2rem;
+                box-sizing: border-box;
+                border-radius: clamp(0.4rem, 0.88vw, 3rem);
+                font-size: clamp(0.4rem, 0.875vw, 3rem);
+                font-weight: 700;
+                text-decoration: none;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                &:active{
+                    transform: translateY(0.1rem);
+                }
+            }
+
+            .btn{
+                background-color: transparent;
+                border: 0.2rem solid #28B45C;
+                color: #ffffff;
+
+                &:hover{
+                    transform: scale(1.05);
+                    background: linear-gradient(90deg,rgba(144, 238, 144, 1) 0%, rgba(87, 199, 133, 1) 100%);
+                }
+            }
+            .btn1{
+
+                background: linear-gradient(90deg,rgba(144, 238, 144, 1) 0%, rgba(87, 199, 133, 1) 100%);
+                color: white;
+                border: 0.2rem solid #008236;
+
+                &:hover{
+                    border: 0.2rem solid #004d20;
+                    transform: scale(1.05);
+                    background: linear-gradient(90deg,rgba(100, 158, 100, 1) 0%, rgba(30, 92, 52, 1) 100%);
+                }
+            }
+        }
+
+    }
+}
+.main{
+    background-color: rgb(148, 197, 181);
+    width: 100%;
+    height: fit-content;
+    padding: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+
+    .infos{
+        margin-top: 8vh;
+        width: 70%;
+        height: 110vh;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        box-sizing: border-box;
+
+        input{
+            background-color: transparent;
+        }
+        .perInfo{
+            width: 100%;
+            height: 12.5%;
+            box-sizing: border-box;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 1rem;
+
+            h1{
+                font-size: 3rem;
+            }
+
+            button{
+                padding: 1rem;
+                box-sizing: border-box;
+                border-radius: 0.5rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        .cont1{
+            width: 100%;
+            height: 47.5%;
+            padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+            box-sizing: border-box;
+            display: flex;
+            
+            .picture{
+                width: 25%;
+                height: 100%;
+                box-sizing: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-sizing: border-box;
+                padding: 1rem;
+                border-radius: 0.5rem;
+
+                .pic{
+                    width: 100%;
+                    height: 60%;
+                    border-radius: 0.5rem;
+                    background-image: url("../CVSUTutorSite/images/profile.png");
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                .addProf, .removeProf{
+                    width: 100%;
+                    height: 13%;
+                    border-radius: 0.5rem;
+                }
+            }
+
+            .insideCont{
+                width: 75%;
+                height: 100%;
+                box-sizing: border-box;
+                padding: 0 0 0 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .role, .name, .address, .program{
+                    width: 100%;
+                    height: 22%;
+                    border-radius: 0.5rem;
+                    padding: 0.5rem;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    h1{
+                        font-size: 1.2rem;
+                        height: 30%;
+                    }
+
+                    input{
+                        width: 100%;
+                        height: 60%;
+                        box-sizing: border-box;
+                        padding-left: 1rem;
+                        font-size: 1rem;
+                        border-radius: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .row{
+            width: 100%;
+            height: 12.5%;
+            padding: 0.5rem;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-evenly;
+
+            div{
+                width: 48%;
+                height: 100%;
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                h1{
+                    font-size: 1.2rem;
+                    height: 30%;
+                }
+
+                input{
+                    width: 100%;
+                    height: 60%;
+                    box-sizing: border-box;
+                    padding-left: 1rem;
+                    font-size: 1.3rem;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+
+        .about{
+            width: 96%;
+            height: 27.5%;
+            padding: 0.5rem;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+
+            h1{
+                font-size: 1.2rem;
+                height: 10%;
+            }
+
+            input{
+                width: 100%;
+                height: 85%;
+                box-sizing: border-box;
+                padding-left: 1rem;
+                font-size: 1.3rem;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+
+    .tutors{
+        width: 70%;
+        height: 120vh;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        box-sizing: border-box;
+
+        .activeTut{
+            width: 100%;
+            height: 15%;
+            box-sizing: border-box;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 1rem;
+
+            h1{
+                font-size: 3rem;
+            }
+
+            button{
+                padding: 1rem;
+                box-sizing: border-box;
+                border-radius: 0.5rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        .activeDiv{
+            height: 50%;
+            width: 100%;
+
+            .row{
+                width: 100%;
+                height: 85%;
+                padding: 1rem;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .tut{
+                    width: 43%;
+                    height: 95%;
+                    border-radius: 0.5rem;
+
+                    .top{
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        box-sizing: border-box;
+                        padding: 1rem;
+                        background-color: #2071b3;
+                        border-radius: 0.25rem 0.25rem 0 0;
+
+                        .left{
+                            width: 35%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .profTut{
+                                width: 80%;
+                                height: 80%;
+                                background-color: black;
+                                border-radius: 0.5rem;
+                            }
+                        }
+
+                        .right{
+                            width: 65%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            gap: 1rem;
+                            flex-direction: column;
+                            box-sizing: border-box;
+                            padding-left: 1rem;
+
+                            .nameTut{
+                                font-size: 1.7rem;
+                            }
+
+                            .subjTut{
+                                font-size: 1.3rem;
+                            }
+                            .stars{
+                                height: 20%;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                font-size: 1rem;
+                                gap: 2.5rem;
+
+                                .starCont{
+                                    display: flex;
+                                    align-items: center;
+                                    height: 100%;
+                                    width: 23%;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .bottom{
+                        height: 50%;
+                        width: 100%;
+                        background-color: rgba(154, 228, 224, 0.836);
+
+                        .upperBot{
+                            height: 60%;
+                            width: 100%;
+                            box-sizing: border-box;
+                            padding: 1rem;                                
+
+                            .stats{
+                                width: 100%;
+                                height: 20%;
+                                display: flex;
+                                justify-content: space-between;
+                                box-sizing: border-box;
+                                font-size: 0.75rem;
+                            }
+                            
+                            .progress{
+                                width: 100%;
+                                height: 80%;
+                                display: flex;
+                                justify-content: center;
+                                box-sizing: border-box;
+                                padding: 1rem 0 1rem 0;
+                                border-bottom: 0.2rem dashed #B9F8CF;
+                                .outer{
+                                    width: 100%;
+                                    height: 90%;
+                                    background-color: black;
+                                    border-radius: 2rem;
+
+                                    .inner{
+                                        width: 75%;
+                                        height: 100%;
+                                        background-color: rgb(59, 189, 92);
+                                        border-radius: 2rem;
+                                    }
+                                }
+
+                            }
+
+                        }
+
+                        .lowerBot{
+                            height: 40%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .textCont{
+                                width: fit-content;
+                                height: 100%;
+                                padding: 0 1rem 0 1rem;
+                                box-sizing: border-box;
+                                text-align: center;
+
+                                h1{
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .upcomgingDiv{
+            height: 50%;
+            width: 100%;
+
+            .row{
+                width: 100%;
+                height: 85%;
+                padding: 1rem;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .tut{
+                    width: 43%;
+                    height: 95%;
+                    border-radius: 0.5rem;
+
+                    .top{
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        box-sizing: border-box;
+                        padding: 1rem;
+                        background-color: #00C850;
+                        border-radius: 0.25rem 0.25rem 0 0;
+
+                        .left{
+                            width: 35%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .profTut{
+                                width: 80%;
+                                height: 80%;
+                                background-color: black;
+                                border-radius: 0.5rem;
+                            }
+                        }
+
+                        .right{
+                            width: 65%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            gap: 1rem;
+                            flex-direction: column;
+                            box-sizing: border-box;
+                            padding-left: 1rem;
+
+                            .nameTut{
+                                font-size: 1.7rem;
+                            }
+
+                            .subjTut{
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                    
+                    .bottom{
+                        height: 50%;
+                        width: 100%;
+                        background-color: rgba(154, 228, 224, 0.836);
+
+                        .upperBot{
+                            height: 60%;
+                            width: 100%;
+                            box-sizing: border-box;
+                            padding: 1rem;                                
+                            display: flex;
+                            
+                            .upperCont{
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                border-radius: 0.5rem;
+                            }
+                            i{
+                                width: 20%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-size: 3rem;
+                            }
+                            .date{
+                                width: 80%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+
+                                .tutorDateText{
+                                    font-size: 1rem;
+                                }
+
+                                .tutorDate{
+                                    font-size: 1.5rem;
+                                }
+                            }
+                            
+                        }
+
+                        .lowerBot{
+                            height: 40%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            .textCont{
+                                width: fit-content;
+                                height: 100%;
+                                padding: 0 1rem 0 1rem;
+                                box-sizing: border-box;
+                                text-align: center;
+
+                                h1{
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    height: 20vw;
+    background-color: #006F41;
+    color: white;
+    
+    .top{
+        width: 100%;
+        height: 84%;
+        display: flex;
+        justify-content: center;
+        
+        .left{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 0.5rem;
+            box-sizing: border-box;
+            padding: 2rem 4rem;
+            
+
+            h1{
+                font-size: 4rem;
+            }
+            h3{
+                font-size: 1.2rem;
+                width: 88%;
+            }
+            .emailSubs{
+                width: 100%;
+                height: 22%;
+                display: flex;
+                gap: 1rem;
+                margin-top: 2rem;
+
+                .emailSubscription{
+                    width: 70%;
+                    height: 100%;
+                    border-radius: 0.75rem;
+                    box-sizing: border-box;
+                    padding: 1rem;
+                    font-size: 1rem;
+                }
+
+                .subscribe{
+                    width: 20%;
+                    height: 100%;
+                    border-radius: 0.75rem;
+                    color: green;
+                    cursor: pointer;
+                    font-size: 1.2rem;
+
+                    &:hover{
+                        background-color: rgba(221, 245, 221);
+                        color: rgb(100, 143, 100);
+                        transform: translateY(-1%) scale(1.05);
+                    }
+                }
+            }
+        }
+        .right{
+            width: 40%;
+            height: 100%;
+            padding: 2rem 4rem;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+
+            .box{
+                height: 100%;
+                width: 30%;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                gap: 1.5rem;
+
+                h1{
+                    font-size: 1.5rem;
+                }
+
+                .aTags{
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    gap: 0.5rem;
+                    
+                    &:hover{
+                        transform: translateY(5%) scale(1.05);
+                        
+                        a{
+                            color: #00C67A;
+                        }
+                    }
+                    
+                    a{
+                        font-size: 1.2rem;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+            .box1{
+                height: 100%;
+                width: 30%;
+
+                .contactDiv{
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    gap: 0.5rem;
+
+                    .numberDiv, .emailDiv{
+                        display: flex;
+                        width: 110%;
+                        height: 30%;
+                        gap: 0.5rem;
+
+                        i{
+                            width: 10%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        h3{
+                            width: 90%;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+
+                .locationDiv{
+                    width: 150%;
+                    height: 40%;
+                    display: flex;
+                    justify-content: start;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    h1{
+                        font-size: 1.5rem;
+                    }
+
+                    .emailDiv{
+                        display: flex;
+                        width: 100%;
+                        height: 30%;
+                        gap: 0.5rem;
+
+                        i{
+                            width: 10%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        h3{
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        border-top: 0.1rem #3fa086 solid;
+
+        .left{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding-left: 2rem;
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+
+        .right{
+            width: 50%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 2rem;
+            box-sizing: border-box;
+            padding-right: 2rem;
+
+            a{
+                color: white;
+                text-decoration: none;
+
+                &:hover{
+                    color: #00C67A;
+                }
+            }
+        }
+    }
+}
