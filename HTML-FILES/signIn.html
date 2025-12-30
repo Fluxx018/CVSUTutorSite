@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS-FILES/signIn.css">
+    <link rel="stylesheet" href="../CSS-FILES/designs.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navUl">
+            <a class="click" href="../index.html"><div class="logo"></div></a>
+            <ul class="navCont">
+                <li><a href="../index.html" class="open-sans-font">Home</a></li>
+                <li><a href="/HTML-FILES/beATutor.html" class="open-sans-font">Be a Tutor</a></li>
+                <li><a href="../HTML-FILES/subjects.html" class="open-sans-font">Subjects</a></li>
+            </ul>
+            <ul class="btnCont">
+                <button onclick="window.location.href='../HTML-FILES/profile.html'" class="global-button1" id="btn">Profile</button>
+                <button onclick="window.location.href='../HTML-FILES/getATutor.html'" class="global-button">Request a Tutor</button>
+            </ul>
+        </ul>
+    </nav>
+    <section class="signIn">
+        <div class="container global-container">
+            <div class="left">
+                <i class="fa-brands fa-google-scholar" style="color: #ffffff;"></i>
+                <h1 class="montserrat-font">Welcome back!</h1>
+                <h2 class="open-sans-font">Log in to continue learning and connect with expert tutors</h2>
+            </div>
+            <div class="right">
+                <div class="borderBottom">
+                    <h1 class="open-sans-font">Sign In</h1>
+                    <div class="info">
+                        <input type="text" name="email" id="email" class="inputEmail global-input" autocomplete="off">
+                        <div class="psw">
+                            <input type="password" name="psw" id="psw" class="inputPSW global-input" autocomplete="off">
+                            <div class="remember">
+                                <div class="days">
+                                    <input autocomplete="off" type="checkbox">
+                                    <h3 class="open-sans-font">Remember for 30 days</h3>
+                                </div>
+                                <a href="../HTML-FILES/forgotPSW.html" class="forgot global-a">Forgot Password?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contButtons">
+                        <button class="login global-button open-sans-font">Login</button>
+                        <h3 class="open-sans-font">or Connect using</h3>
+                        <button class="cvsuAccount global-button1 open-sans-font">CVSU Account</button>
+                    </div>
+                    <h3 class="account open-sans-font">Don't have an account? <a href="../HTML-FILES/signUp.html" class="global-a">Sign Up</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../CVSUTutorSite/JS-FILES/login.js"></script>
+    <script src="https://kit.fontawesome.com/cad499ef5f.js" crossorigin="anonymous"></script>
+</body>
+</html>

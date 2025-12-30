@@ -1,0 +1,867 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 16px;
+}
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+ul li{
+    list-style: none;
+}
+.navbar{
+    height: clamp(2.2rem, 4.813vw, 16.5rem);
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(185, 248, 207,0.8);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 0.3rem #B9F8CF solid;
+
+    .navUl{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: clamp(2rem, 12vw, 15rem);
+        box-sizing: border-box;
+        padding-right: clamp(1.2rem, 2.625vw, 9rem);
+
+        .click{
+            width: clamp(2rem, 4.375vw, 15.0rem);
+            height: 100%;
+            margin-left: clamp(4rem, 10vh, 40rem);
+
+            .logo{
+                height: clamp(3rem, 3.5vw, 9rem);
+                width: clamp(3.3rem, 4.5vw, 9rem);
+                cursor: pointer;
+                
+                ../CVSUTutorSite/images/cvsu.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-color: transparent;
+            }
+        }
+        .navCont{
+            width: 40%;
+            height: clamp(1rem, 7vh, 10rem);
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+
+            li{
+                height: 80%;
+                width: 20%; 
+                padding: clamp(0.80rem, 0.88vw, 1.40rem);
+                box-sizing: border-box;
+                border-radius: 1rem;
+                
+                &:hover{
+                    background-color: rgba(208, 240, 192, 0.7);
+                }
+                
+                a{  
+                    color: black;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    font-size: clamp(0.52rem, 1.14vw, 3.9rem);
+                    font-weight: 700;
+                }
+            }
+            
+        }
+        .btnCont{
+            width: 20%; 
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            button{
+                width: fit-content;
+                height: 70%;
+                padding: 0 2rem;
+                box-sizing: border-box;
+                border-radius: clamp(0.4rem, 0.88vw, 3rem);
+                font-size: clamp(0.4rem, 0.875vw, 3rem);
+                font-weight: 700;
+                text-decoration: none;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                &:active{
+                    transform: translateY(0.1rem);
+                }
+            }
+        }
+
+    }
+}
+.landPage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../CVSUTutorSite/images/poly.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .landPageText{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    gap: clamp(0.8rem, 1.75vw, 6.0rem);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        h1{
+            width: 100%;
+            height: 7vh;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(1.8rem, 3.938vw, 13.5rem);
+            box-shadow: rgba(0,0,0,0.3);
+        }
+        .subText{
+            width: 55%;
+            height: 10vh;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(0.6rem, 1.313vw, 4.5rem);
+            text-align: center;
+            box-shadow: rgba(0,0,0,0.3);
+        }
+        .btnContain{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(0.4rem, 0.88vw, 3rem);
+
+            .landPageBtn{
+                width: 12vw;
+                height: 7vh;
+                border-radius: 1rem;
+                font-size: clamp(0.6rem, 1.2vw, 4.5rem);
+                box-shadow: 0.1rem 0.2rem gray;
+
+                &:active{
+                    transform: translateY(0.1rem);
+                    box-shadow: 0.1rem 0.2rem rgb(128, 28, 28);
+                }
+            }
+            .landPageBtn1{
+                width: 8vw;
+                height: 7vh;
+                border-radius: clamp(0.4rem, 0.88vw, 3rem);
+                font-size: clamp(0.6rem, 1.2vw, 4.5rem);
+                box-shadow: 0.1rem 0.2rem gray;
+                                
+                
+                
+                &:active{
+                    transform: translateY(0.1rem);
+                }
+            }
+
+        }
+    }
+    .image{
+        width: 35vw;
+        height: 12vh;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: space-between;
+        
+        .circles{
+            width: 55%;
+            height: 100%;
+            position: relative;
+            display: flex;
+
+            .circle{
+                width: 25%;
+                height: 75%;
+                border-radius: 50%;
+                background-color: rgb(86, 105, 187);
+                box-sizing: border-box;
+            }
+
+            .one{
+                position: absolute;
+                top: 13%;
+                left: 5%;
+            }
+            .two{
+                position: absolute;
+                top: 13%;
+                left: 22%;
+            }
+            .three{
+                position: absolute;
+                top: 13%;
+                left: 39%;
+            }
+            .four{
+                position: absolute;
+                top: 13%;
+                left: 56%;
+            }
+            .five{
+                position: absolute;
+                top: 13%;
+                left: 73%;   
+            }
+        }
+        .textsContainer{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h3{
+                font-size: clamp(0.6rem, 1.313vw, 4.5rem);
+            }
+        }
+    }
+}
+.steps{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(2rem, 4.375vw, 15.0rem);
+    background-image: url('../CVSUTutorSite/images/stacked1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .textsCont{
+        height: 15%;
+        width: 40%;
+        text-align: center;
+        
+        h1{
+            font-size: clamp(2.4rem, 5.25vw, 18.0rem);
+        }
+        h3{
+            font-size: clamp(0.8rem, 1.75vw, 6.0rem);
+        }
+    }
+
+    .divCont{
+        width: 80%;
+        height: 45%;
+        display: flex;
+        justify-content: space-evenly;
+
+        
+        .stepCont{
+            width: 28%;
+            height: 100%;
+            border-radius: clamp(0.8rem, 1.75vw, 6.0rem);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .img{
+                width: 100%;
+                height: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .containerA{
+                    width: 40%;
+                    height: 90%;
+                    background: linear-gradient(90deg,rgba(0, 199, 81, 1) 0%, rgba(0, 154, 102, 1) 100%);
+                    padding: 2rem;
+                    box-sizing: border-box;
+                    border-radius: 2rem;
+
+                    i{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 7rem;
+                    }
+                }
+            }
+            h1{
+                height: 20%;
+                width: 100%;
+                font-size: clamp(2.4rem, 5.25vw, 18.0rem);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            h2{
+                height: 15%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: clamp(0.6rem, 1.313vw, 4.5rem);
+            }
+            h4{
+                height: 20%;
+                width: 80%;
+                font-size: clamp(0.4rem, 0.88vw, 3rem);
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+
+            &:hover{
+                transform: scale(1.1) translateY(-1%);
+                cursor: pointer;
+            }
+        }
+    }
+}
+.information{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10vh;
+    gap: 5rem;
+    background-image: url('../CVSUTutorSite/images/stacked.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .titleText{
+    width: 80vw;
+    height: 10vh;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(2.4rem, 4.85vw, 18rem);
+    }
+    .contain{
+        width: 86%;
+        height: 60vh;
+        border-radius: 1rem;        
+        display: flex;
+        align-items: end;
+
+        .contain1{
+            border-top: 1.12rem solid #00C67A;
+            width: 100%;
+            height: 97%;
+            border-radius: 0.9rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            .image1{
+                width: 40%;
+                height: 45vh;
+                background-color: rgb(231, 106, 106);
+                border-radius: 1rem;
+                box-shadow: 0.1rem 0.1rem 1rem 0.5rem #D2F5E6;
+            }
+
+            .infos{
+                width: 35vw;
+                height: 45vh;
+                border-radius: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: clamp(0.6rem, 1.313vw, 4.5rem);
+
+            }
+        }
+    }
+}
+.topTutors{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 3rem;
+    background-image: url('../CVSUTutorSite/images/stacked1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .titleText1{
+        width: 80vw;
+        height: 25%;
+        border-radius: clamp(0.4rem, 0.875vw, 3rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .h1Text{
+            font-size: clamp(1.8rem, 4.1vw, 14rem);
+            font-weight: 700;
+            height: 30%;
+        }
+        .h3Text{
+            font-size: clamp(0.8rem, 1.75vw, 6rem);
+            margin-bottom: 1.5rem;
+        }
+        .h5Text{
+            font-size: clamp(0.6rem, 1.25vw, 4.5rem);
+            width: 60vw;
+        }
+    }
+    .topTutorsContain{
+        width: 100%;
+        height: 72%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        padding: 2rem;
+        box-sizing: border-box;
+
+        .tutor{
+            width: 21%;
+            height: 100%;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 1rem;
+            box-sizing: border-box;
+
+            .image2{
+                width: 100%;
+                height: 50%;
+                background-color: rgb(255, 181, 181);
+                box-shadow: 0.1rem 0.1rem 1.1rem 1rem #92D6BE;
+
+            }
+
+            .text{
+                width: 100%;
+                height: 50%;
+                font-size: clamp(0.8rem, 1.75vw, 6rem);
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                gap: 1.5rem;
+                padding: 1rem;
+                margin-top: 2rem;
+                box-sizing: border-box;
+            
+                .name{
+                    width: 90%;
+                    height: 10%;
+                    font-size: 2rem;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .program{
+                    flex-shrink: 0;
+                    width: fit-content;
+                    height: 7%;
+                    font-size: clamp(0.45rem, 1vw, 4.5rem);
+                    border-radius: 1rem;
+                    padding: 0.5rem;
+                    border: 0.15rem solid black;
+                }
+                
+                .tutorInfo{
+                    width: 90%;
+                    height: 30%;
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+
+            }
+            
+            &:hover{
+                transform: translateY(-3%) scale(1.05); 
+            }
+        }
+    }
+}
+.reviews{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 4rem;
+    background-image: url('../CVSUTutorSite/images/stacked.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .titleText{
+        width: 90%;
+        height: 10vh;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: clamp(2.4rem, 4.85vw, 18rem);
+    }
+
+    .contain1, .contain2{
+        width: 100%;
+        height: 34vh;
+        overflow-x: auto;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    
+        .group{
+            width: 200%;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            gap: 1rem;
+            animation: carousel 60s infinite linear;
+            padding-right: 1em;
+        }
+
+        .group2{
+            width: 200%;
+            display: flex;
+            justify-content: end;
+            align-items: start;
+            gap: 1rem;
+            animation: carousel_reversed 60s infinite linear;
+            padding-right: 1em;
+        }
+
+
+    }
+
+    .contain1{
+        margin-top: 3rem;
+
+
+    }
+
+    .comment{
+        flex: 0 0 32vh;
+        width: 17%;
+        height: 32vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: clamp(0.8rem, 1.75vw, 6.0rem);
+
+
+        .content{
+            width: 90%;
+            height: 22vh;
+            text-align: left;
+            font-size: clamp(0.52rem, 1vw, 3.9rem);
+            display: flex;
+            align-items: center;
+        }
+
+        .account{
+            width: 90%;
+            height: 7vh;
+            border: 0;
+            border-top: 0.2rem solid #B9F8CF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .acntLogo{
+                width: 20%;
+                height: 7vh;
+                background-color: aquamarine;
+            }
+            .acntName{
+                width: 80%;
+                height: 7vh;
+                box-sizing: border-box;
+                padding-left: 0.5rem;
+
+                .main, .user{
+                    width: 100%;
+                    height: 3.5vh;
+                    font-size: clamp(0.52rem, 1.14vw, 3.9rem);
+                    text-align: left;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@keyframes carousel {
+    from {translate: 0}
+    to {translate: -100%}
+}
+@keyframes carousel_reversed {
+    from {translate: -100%}
+    to {translate: 0}
+}
+.footer{
+    width: 100%;
+    height: 20vw;
+    background-color: #006F41;
+    color: white;
+    
+    .top{
+        width: 100%;
+        height: 84%;
+        display: flex;
+        justify-content: center;
+        
+        .left{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 0.5rem;
+            box-sizing: border-box;
+            padding: 2rem 4rem;
+            
+
+            h1{
+                font-size: 4rem;
+            }
+            h3{
+                font-size: 1.2rem;
+                width: 88%;
+            }
+            .emailSubs{
+                width: 100%;
+                height: 22%;
+                display: flex;
+                gap: 1rem;
+                margin-top: 2rem;
+
+                .emailSubscription{
+                    width: 70%;
+                    height: 100%;
+                    border-radius: 0.75rem;
+                    box-sizing: border-box;
+                    padding: 1rem;
+                    font-size: 1rem;
+                }
+
+                .subscribe{
+                    width: 20%;
+                    height: 100%;
+                    border-radius: 0.75rem;
+                    color: green;
+                    cursor: pointer;
+                    font-size: 1.2rem;
+
+                    &:hover{
+                        background-color: rgba(221, 245, 221);
+                        color: rgb(100, 143, 100);
+                        transform: translateY(-1%) scale(1.05);
+                    }
+                }
+            }
+        }
+        .right{
+            width: 40%;
+            height: 100%;
+            padding: 2rem 4rem;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+
+            .box{
+                height: 100%;
+                width: 30%;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                gap: 1.5rem;
+
+                h1{
+                    font-size: 1.5rem;
+                }
+
+                .aTags{
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    gap: 0.5rem;
+                    
+                    &:hover{
+                        transform: translateY(5%) scale(1.05);
+                        
+                        a{
+                            color: #00C67A;
+                        }
+                    }
+                    
+                    a{
+                        font-size: 1.2rem;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+            .box1{
+                height: 100%;
+                width: 30%;
+
+                .contactDiv{
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    gap: 0.5rem;
+
+                    .numberDiv, .emailDiv{
+                        display: flex;
+                        width: 110%;
+                        height: 30%;
+                        gap: 0.5rem;
+
+                        i{
+                            width: 10%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        h3{
+                            width: 90%;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+
+                .locationDiv{
+                    width: 150%;
+                    height: 40%;
+                    display: flex;
+                    justify-content: start;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    h1{
+                        font-size: 1.5rem;
+                    }
+
+                    .emailDiv{
+                        display: flex;
+                        width: 100%;
+                        height: 30%;
+                        gap: 0.5rem;
+
+                        i{
+                            width: 10%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        h3{
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        border-top: 0.1rem #3fa086 solid;
+
+        .left{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding-left: 2rem;
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+
+        .right{
+            width: 50%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 2rem;
+            box-sizing: border-box;
+            padding-right: 2rem;
+
+            a{
+                color: white;
+                text-decoration: none;
+
+                &:hover{
+                    color: #00C67A;
+                }
+            }
+        }
+    }
+}

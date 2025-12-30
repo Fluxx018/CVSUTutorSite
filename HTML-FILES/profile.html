@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS-FILES/profile.css">
+    <link rel="stylesheet" href="../CSS-FILES/designs.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navUl">
+            <a class="click" href="../index.html"><div class="logo"></div></a>
+            <ul class="navCont">
+                <li><a href="../index.html" class="open-sans-font">Home</a></li>
+                <li><a href="/HTML-FILES/beATutor.html" class="open-sans-font">Be a Tutor</a></li>
+                <li><a href="../HTML-FILES/subjects.html" class="open-sans-font">Subjects</a></li>
+            </ul>
+            <ul class="btnCont">
+                <button onclick="window.location.href='../HTML-FILES/profile.html'" class="global-button1" id="btn">Profile</button>
+                <button onclick="window.location.href='../HTML-FILES/getATutor.html'" class="global-button">Request a Tutor</button>
+            </ul>
+        </ul>
+    </nav>
+    <section class="main" id="main">
+        <div class="infos global-container">
+            <div class="perInfo global-container1">
+                <h1 class="montserrat-font">Personal Information</h1>
+                <button class="global-button montserrat-font" id="btnEdit"><i class="fa-solid fa-pencil" style="color: #ffffff;"></i> Change Information</button>
+            </div>
+            <div class="cont1">
+                <div class="picture global-container1">
+                    <div class="pic" id="pic"></div>
+                    <input autocomplete="off" type="file" id="fileSelect" accept="image/*" style="display: none;">
+                    <button class="addProf global-button open-sans-font" id="addProf">Add Profile</button>
+                    <button class="removeProf global-button1 open-sans-font" id="removeProf">Remove Profile</button>
+                </div>
+                <div class="insideCont">
+                    <div class="role global-container1">
+                        <h1 class="open-sans-font"><i class="fa-regular fa-user" style="color: #63E6BE;"></i> Role</h1>
+                        <input autocomplete="off" type="text" name="" id="role" class=" open-sans-font" placeholder="Student" disabled>
+                    </div>
+                    <div class="name global-container1">
+                        <h1 class="open-sans-font"><i class="fa-solid fa-scroll" style="color: #63E6BE;"></i> Full Name</h1>
+                        <input autocomplete="off" type="text" name="" id="" class=" open-sans-font" disabled>
+                    </div>
+                    <div class="program global-container1">
+                        <h1 class="open-sans-font"><i class="fa-solid fa-book" style="color: #63E6BE;"></i> Program</h1>
+                        <input autocomplete="off" type="text" name="" id="" class=" open-sans-font" disabled>
+                    </div>
+                    <div class="address global-container1">
+                        <h1 class="open-sans-font"><i class="fa-solid fa-map-pin" style="color: #63E6BE;"></i> Address</h1>
+                        <input autocomplete="off" type="email" name="" id="" class=" open-sans-font" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="email global-container1">
+                    <h1 class="open-sans-font"><i class="fa-solid fa-envelope" style="color: #63E6BE;"></i> Email</h1>
+                    <input autocomplete="off" type="email" name="" id="" class=" open-sans-font" disabled>
+                </div>
+                <div class="phone global-container1">
+                    <h1 class="open-sans-font"><i class="fa-solid fa-phone" style="color: #63E6BE;"></i> Phone</h1>
+                    <input autocomplete="off" type="text" name="" id="" class=" open-sans-font" disabled>
+                </div>
+            </div>
+            <div class="about global-container1">
+                <h1 class="open-sans-font"><i class="fa-solid fa-phone" style="color: #63E6BE;"></i> About Me</h1>
+                <input autocomplete="off" type="text" name="" id="" class=" open-sans-font" disabled>
+            </div>
+        </div>
+        <div class="tutors global-container">
+            <div class="activeDiv">
+                <div class="activeTut global-container1">
+                    <h1 class="montserrat-font">Active Tutor</h1>
+                    <h1 class="montserrat-font">2 active</h1>
+                </div>
+                <div class="row">
+                    <div class="tut global-container1">
+                        <div class="top">
+                            <div class="left">
+                                <div class="profTut"></div>
+                            </div>
+                            <div class="right">
+                                <h1 class="nameTut open-sans-font">Dr. Sarah Johnson</h1>
+                                <h1 class="subjTut open-sans-font">Mathematics</h1>
+                                <div class="stars">
+                                    <div class="starCont">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    </div>
+                                    <h3 class="open-sans-font"> 4.9 (125 reviews)</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="upperBot">
+                                <div class="stats">
+                                    <h1 class="open-sans-font">Progress</h1>
+                                    <h1 class="open-sans-font">75%</h1>
+                                </div>
+                                <div class="progress">
+                                    <div class="outer global-container1">
+                                        <div class="inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lowerBot">
+                                <div class="textCont">
+                                    <h1 class="open-sans-font">Sessions</h1>
+                                    <h1 class="open-sans-font">7</h1>
+                                </div>
+                                <div class="textCont">
+                                    <h1 class="open-sans-font">Tutoring Type</h1>
+                                    <h1 class="open-sans-font">Face to Face</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tut global-container1">
+                        <div class="top">
+                            <div class="left">
+                                <div class="profTut"></div>
+                            </div>
+                            <div class="right">
+                                <h1 class="nameTut open-sans-font">Dr. Sarah Johnson</h1>
+                                <h1 class="subjTut open-sans-font">Mathematics</h1>
+                                <div class="stars">
+                                    <div class="starCont">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    </div>
+                                    <h3 class="open-sans-font"> 4.9 (125 reviews)</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="upperBot">
+                                <div class="stats">
+                                    <h1 class="open-sans-font">Progress</h1>
+                                    <h1 class="open-sans-font">75%</h1>
+                                </div>
+                                <div class="progress">
+                                    <div class="outer global-container1">
+                                        <div class="inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lowerBot">
+                                <div class="textCont">
+                                    <h1 class="open-sans-font">Sessions</h1>
+                                    <h1 class="open-sans-font">7</h1>
+                                </div>
+                                <div class="textCont">
+                                    <h1 class="open-sans-font">Tutoring Type</h1>
+                                    <h1 class="open-sans-font">Face to Face</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upcomgingDiv">
+                <div class="activeTut global-container1">
+                    <h1 class="montserrat-font">Upcoming Tutor</h1>
+                    <h1 class="montserrat-font">1 Upcoming</h1>
+                </div>
+                <div class="row">
+                    <div class="tut global-container1">
+                        <div class="top">
+                            <div class="left">
+                                <div class="profTut"></div>
+                            </div>
+                            <div class="right">
+                                <h1 class="nameTut open-sans-font">Dr. Sarah Johnson</h1>
+                                <h1 class="subjTut open-sans-font">Mathematics</h1>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="upperBot">
+                                <div class="upperCont global-container1">
+                                    <i class="fa-solid fa-calendar" style="color: #73e25d;"></i>
+                                    <div class="date">
+                                        <h1 class="tutorDateText open-sans-font">Your tutoring will start on</h1>
+                                        <h1 class="tutorDate open-sans-font">Jan 18, 2026</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lowerBot">
+                                <div class="textCont">
+                                    <h1 class="open-sans-font">Sessions</h1>
+                                    <h1 class="open-sans-font">9</h1>
+                                </div>
+                                <div class="textCont">
+                                    <h1 class="open-sans-font">Tutoring Type</h1>
+                                    <h1 class="open-sans-font">Online</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tut global-container1">
+                        <div class="top">
+                            <div class="left">
+                                <div class="profTut"></div>
+                            </div>
+                            <div class="right">
+                                <h1 class="nameTut open-sans-font">Dr. Sarah Johnson</h1>
+                                <h1 class="subjTut open-sans-font">Mathematics</h1>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="upperBot">
+                                <div class="upperCont global-container1">
+                                    <i class="fa-solid fa-calendar" style="color: #73e25d;"></i>
+                                    <div class="date">
+                                        <h1 class="tutorDateText open-sans-font">Your tutoring will start on</h1>
+                                        <h1 class="tutorDate open-sans-font">Jan 18, 2026</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lowerBot">
+                                <div class="textCont">
+                                    <h1 class="open-sans-font">Sessions</h1>
+                                    <h1 class="open-sans-font">9</h1>
+                                </div>
+                                <div class="textCont">
+                                    <h1 class="open-sans-font">Tutoring Type</h1>
+                                    <h1 class="open-sans-font">Online</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="top">
+            <div class="left">
+                <h1 class="montserrat-font">Stay Updated</h1>
+                <h3 class="open-sans-font">Get the latest updates, exclusive offers, and important announcements delivered straight to your inbox</h3>
+                <div class="emailSubs">
+                    <input type="email"  placeholder="Enter your email" class="emailSubscription global-input open-sans-font" id="emailSubscription" autocomplete="off">
+                    <button class="subscribe montserrat-font" id="subscribe">Subscribe</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="box">
+                    <h1 class="montserrat-font">Quick Links</h1>
+                    <div class="aTags">
+                        <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                        <a href="../index.html" class="open-sans-font">Home</a>
+                    </div>
+                    <div class="aTags">
+                        <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                        <a href="../HTML-FILES/beATutor.html" class="open-sans-font">Become a Tutor</a>
+                    </div>
+                    <div class="aTags">
+                        <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                        <a href="../HTML-FILES/subjects.html" class="open-sans-font">Browse Subjects</a>
+                    </div>
+                    <div class="aTags">
+                        <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                        <a href="../HTML-FILES/signUp.html" class="open-sans-font signUpFooter" id="signUpFooter">Sign Up</a>
+                    </div>
+                </div>
+                <div class="box1">
+                    <div class="contactDiv">
+                        <h1 class="montserrat-font">Contact</h1>
+                        <div class="numberDiv">
+                            <i class="fa-solid fa-phone"></i>
+                            <h3 class="open-sans-font">0912 345 6789</h3>
+                        </div>
+                        <div class="emailDiv">
+                            <i class="fa-regular fa-envelope"></i>
+                            <h3 class="open-sans-font">aldubGroup@gmail.com</h3>
+                        </div>
+
+                    </div>
+                    <div class="locationDiv">
+                        <h1 class="montserrat-font">Location</h1>
+                        <div class="emailDiv">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <h3 class="open-sans-font">Bancod, Indang, Cavite 4122, Philippines</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="left"><h1 class="montserrat-font">@ 2025 Group Aldub Tutor Website</h1></div>
+            <div class="right">
+                <a href="https://policies.google.com/privacy?hl=en-US" class="open-sans-font">Privacy Policy</a>
+                <a href="https://policies.google.com/terms?hl=en-US" class="open-sans-font">Terms</a>
+                <a href="https://contacts.google.com" class="open-sans-font">Contact</a>
+            </div>
+        </div>
+    </section>
+    <script src="../CVSUTutorSite/JS-FILES/login.js"></script>
+    <script src="../CVSUTutorSite/JS-FILES/profile.js"></script>
+    <script src="https://kit.fontawesome.com/cad499ef5f.js" crossorigin="anonymous"></script>
+</body>
+</html>

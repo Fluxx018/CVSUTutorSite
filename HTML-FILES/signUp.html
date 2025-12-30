@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS-FILES/signUp.css">
+    <link rel="stylesheet" href="../CSS-FILES/designs.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navUl">
+            <a class="click" href="../index.html"><div class="logo"></div></a>
+            <ul class="navCont">
+                <li><a href="../index.html" class="open-sans-font">Home</a></li>
+                <li><a href="/HTML-FILES/beATutor.html" class="open-sans-font">Be a Tutor</a></li>
+                <li><a href="../HTML-FILES/subjects.html" class="open-sans-font">Subjects</a></li>
+            </ul>
+            <ul class="btnCont">
+                <button onclick="window.location.href='../HTML-FILES/profile.html'" class="global-button1" id="btn">Profile</button>
+                <button onclick="window.location.href='../HTML-FILES/getATutor.html'" class="global-button">Request a Tutor</button>
+            </ul>
+        </ul>
+    </nav>
+    <section class="signUp">
+        <div class="cont global-container">
+            <div class="textCont">
+                <h1 open-sans-font>Create an Account</h1>
+                <h3 open-sans-font>Already have an account? <a href="../HTML-FILES/signIn.html" class="global-a">Log in</a></h3>
+            </div>
+            <div class="infos">
+                <div class="fullName">
+                        <input type="text" class="fName global-inputLight open-sans-font" placeholder="First Name" name="fName" id="fName" required> 
+                        <input type="text" class="lName global-inputLight open-sans-font" placeholder="Last Name" name="lName" id="lName" required>       
+                </div>
+                    <input type="text" placeholder="Student Number" name="studentNum" id="studentNum" class="studentNum global-inputLight open-sans-font" required>
+                    <input type="email" placeholder="Email" name="email" id="email" class="email global-inputLight open-sans-font" required>
+                    <input type="password" placeholder="Password" name="psw" id="psw" class="psw global-inputLight open-sans-font" required>
+                    <input type="password" placeholder="Confirm Password" name="confirmpsw" id="confirmpsw" class="confirmpsw global-inputLight open-sans-font" required>
+                <div class="agree">
+                    <input type="checkbox">
+                    <h4 class="open-sans-font">I agree to the <a href="https://policies.google.com/terms?hl=en" class="global-a open-sans-font">terms & conditions</a></h4>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="create global-button open-sans-font">Create Account</button>
+                <div class="or">
+                    <hr style="background-color: #B9F8CF;">
+                    <span class="open-sans-font">Or register with</span>
+                    <hr style="background-color: #B9F8CF;">
+                </div>
+                <button class="cvsuAccount global-button1 open-sans-font">CVSU Account</button>
+            </div>
+        </div>
+    </section>
+    </section>
+    <script src="../JS-FILES//login.js"></script>
+    <script src="https://kit.fontawesome.com/cad499ef5f.js" crossorigin="anonymous"></script>
+</body>
+</html>
